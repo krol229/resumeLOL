@@ -1,0 +1,424 @@
+/* ===== ОСНОВНОЙ СТИЛЬ WEB 1.0 ===== */
+body {
+    background-color: #C0C0C0;
+    font-family: "Times New Roman", Times, serif;
+    color: #000000;
+    margin: 20px;
+    padding: 0;
+    transition: background-color 0.5s ease, background-image 0.5s ease;
+    min-height: 100vh;
+    background-image: none;
+}
+
+table.main {
+    width: 800px;
+    background-color: #FFFFFF;
+    border: 3px solid #808080;
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+
+.box {
+    border: 2px groove #D0D0D0;
+    background-color: #F0F0F0;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    transition: all 0.5s ease;
+}
+
+.box-dark {
+    border: 2px groove #808080;
+    background-color: #E0E0E0;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    transition: all 0.5s ease;
+}
+
+pre, .code {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    background-color: #E0E0E0;
+    padding: 8px 10px;
+    border-left: 4px solid #000080;
+    display: block;
+    white-space: pre-wrap;
+    margin: 0;
+    transition: all 0.5s ease;
+}
+
+a:link {
+    color: #0000FF;
+    text-decoration: underline;
+}
+a:visited {
+    color: #800080;
+}
+a:hover {
+    color: #FF0000;
+    background-color: #FFFF00;
+}
+
+blink {
+    animation: blink-animation 0.8s step-end infinite;
+    font-weight: bold;
+    color: #FF0000;
+}
+@keyframes blink-animation {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+marquee {
+    background-color: #000000;
+    color: #00FF00;
+    font-family: "Courier New", monospace;
+    padding: 4px 8px;
+    border: 2px inset #808080;
+    transition: all 0.5s ease;
+}
+
+.counter {
+    background-color: #000000;
+    color: #00FF00;
+    font-family: "Courier New", monospace;
+    padding: 2px 10px;
+    border: 2px inset #808080;
+    display: inline-block;
+    letter-spacing: 2px;
+    transition: all 0.5s ease;
+}
+
+.status-bar {
+    background-color: #000000;
+    color: #00FF00;
+    font-family: "Courier New", monospace;
+    padding: 4px 10px;
+    border: 2px inset #808080;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    transition: all 0.5s ease;
+}
+.status-bar .clickable {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #00FF00;
+}
+.status-bar .clickable:hover {
+    color: #FFFF00;
+}
+
+.hidden-tip {
+    color: #C0C0C0;
+    font-size: 11px;
+    user-select: none;
+    text-align: center;
+    margin-top: 8px;
+    transition: color 0.5s ease;
+}
+.hidden-tip:hover {
+    color: #000000;
+    background-color: #FFFF00;
+}
+
+.footer {
+    font-size: 12px;
+    color: #808080;
+    text-align: center;
+    margin-top: 10px;
+    transition: all 0.5s ease;
+}
+
+.skill-tag {
+    display: inline-block;
+    background-color: #E0E0E0;
+    border: 1px solid #C0C0C0;
+    padding: 1px 10px;
+    margin: 2px 3px 2px 0;
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    transition: all 0.5s ease;
+}
+
+.icon {
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    color: #800080;
+    font-size: 15px;
+    margin-right: 4px;
+    transition: color 0.5s ease;
+}
+
+/* ===== ЗАГОЛОВОК С ФИО ===== */
+.fio-header {
+    font-family: Times New Roman;
+    color: #000080;
+    background-color: #E0E0E0;
+    padding: 10px;
+    border: 4px ridge #808080;
+    margin: 0 0 6px 0;
+    transition: all 0.5s ease;
+}
+.fio-sub {
+    font-family: Courier New;
+    color: #800000;
+    margin: 0 0 14px 0;
+    font-size: 16px;
+    transition: color 0.5s ease;
+}
+.fio-sub span {
+    color: #000080;
+    transition: color 0.5s ease;
+}
+
+/* ===== ТАБЛИЦА ДЛЯ ОПЫТА РАБОТЫ ===== */
+.exp-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.exp-table td {
+    vertical-align: top;
+    padding: 4px 0;
+}
+.exp-table .exp-left {
+    width: 65%;
+    padding-right: 12px;
+}
+.exp-table .exp-right {
+    width: 35%;
+    text-align: center;
+    padding-left: 12px;
+    border-left: 2px dotted #C0C0C0;
+    transition: border-color 0.5s ease;
+}
+.exp-table .exp-right img {
+    max-width: 100%;
+    height: auto;
+    border: 2px inset #808080;
+    background-color: #FFFFFF;
+    transition: all 0.5s ease;
+}
+.exp-table .exp-right .placeholder {
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+    color: #808080;
+    background-color: #E0E0E0;
+    border: 2px inset #808080;
+    padding: 20px 10px;
+    display: block;
+    transition: all 0.5s ease;
+}
+.exp-company {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000080;
+    font-family: "Times New Roman", Times, serif;
+    transition: color 0.5s ease;
+}
+.exp-company img {
+    vertical-align: middle;
+    margin-right: 6px;
+    border: 1px solid #808080;
+    background-color: #FFFFFF;
+    transition: all 0.5s ease;
+}
+.exp-company .badge {
+    font-size: 14px;
+    color: #800000;
+    font-weight: normal;
+    transition: color 0.5s ease;
+}
+.exp-position {
+    font-size: 15px;
+    font-weight: bold;
+    color: #800080;
+    font-family: "Courier New", monospace;
+    margin-top: 2px;
+    transition: color 0.5s ease;
+}
+.exp-date {
+    font-size: 13px;
+    color: #808080;
+    font-family: "Courier New", monospace;
+    transition: color 0.5s ease;
+}
+.exp-desc {
+    font-size: 14px;
+    font-family: "Courier New", monospace;
+    margin: 4px 0 6px 16px;
+    line-height: 1.6;
+}
+.exp-divider {
+    border-bottom: 2px dotted #D0D0D0;
+    margin: 10px 0;
+    transition: border-color 0.5s ease;
+}
+
+/* ========================================================= */
+/* ===== VAPORWAVE — ПОЛНЫЙ ФОН НА ВСЁ BODY ================ */
+/* ========================================================= */
+
+body.vaporwave {
+    background-image: url('../assets/gifs/vaporwave-sunset.gif') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    background-color: #1a0b2e !important;
+}
+
+body.vaporwave::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 0, 20, 0.78);
+    z-index: 0;
+    pointer-events: none;
+}
+
+body.vaporwave table.main,
+body.vaporwave .box,
+body.vaporwave .box-dark,
+body.vaporwave .status-bar,
+body.vaporwave marquee,
+body.vaporwave .footer,
+body.vaporwave .hidden-tip,
+body.vaporwave .fio-header,
+body.vaporwave .fio-sub {
+    position: relative;
+    z-index: 1;
+}
+
+body.vaporwave table.main {
+    background-color: rgba(13, 2, 33, 0.92) !important;
+    border-color: #ff00a0 !important;
+    box-shadow: 0 0 80px rgba(255, 0, 160, 0.2);
+}
+
+body.vaporwave .box {
+    background-color: rgba(26, 10, 42, 0.92) !important;
+    border-color: #6a2a5a !important;
+    color: #d0b0d0 !important;
+}
+
+body.vaporwave .box-dark {
+    background-color: rgba(26, 10, 42, 0.92) !important;
+    border-color: #6a2a5a !important;
+    color: #d0b0d0 !important;
+}
+
+body.vaporwave .box pre,
+body.vaporwave .box .code {
+    background-color: rgba(13, 2, 33, 0.9) !important;
+    border-left-color: #ff00a0 !important;
+    color: #ffea00 !important;
+}
+
+body.vaporwave a:link {
+    color: #00ffff !important;
+}
+body.vaporwave a:visited {
+    color: #ff00a0 !important;
+}
+body.vaporwave a:hover {
+    color: #ffffff !important;
+    background-color: #ff00a0 !important;
+}
+
+body.vaporwave marquee {
+    background-color: rgba(42, 10, 58, 0.9) !important;
+    color: #ff00a0 !important;
+    border-color: #6a2a5a !important;
+}
+
+body.vaporwave .status-bar {
+    background-color: rgba(10, 0, 16, 0.9) !important;
+    border-color: #6a2a5a !important;
+    color: #ff00a0 !important;
+}
+body.vaporwave .status-bar .clickable {
+    color: #ff00a0 !important;
+}
+body.vaporwave .status-bar .clickable:hover {
+    color: #00ffff !important;
+}
+body.vaporwave .counter {
+    background-color: rgba(42, 10, 58, 0.9) !important;
+    border-color: #6a2a5a !important;
+    color: #ff00a0 !important;
+}
+body.vaporwave .hidden-tip {
+    color: #4a2a4a !important;
+}
+body.vaporwave .hidden-tip:hover {
+    color: #ff00a0 !important;
+    background-color: rgba(10, 0, 16, 0.8) !important;
+}
+body.vaporwave .footer {
+    color: #6a4a6a !important;
+}
+body.vaporwave blink {
+    color: #00ffff !important;
+}
+body.vaporwave .skill-tag {
+    background-color: rgba(26, 10, 42, 0.9) !important;
+    border-color: #4a2a4a !important;
+    color: #b080c0 !important;
+}
+body.vaporwave .icon {
+    color: #ff00a0 !important;
+}
+body.vaporwave .fio-header {
+    color: #ff00a0 !important;
+    background-color: rgba(26, 10, 42, 0.9) !important;
+    border-color: #ff00a0 !important;
+    box-shadow: 0 0 30px rgba(255, 0, 160, 0.1);
+}
+body.vaporwave .fio-sub {
+    color: #00ffff !important;
+}
+body.vaporwave .fio-sub span {
+    color: #ff00a0 !important;
+}
+body.vaporwave .exp-company {
+    color: #ff00a0 !important;
+}
+body.vaporwave .exp-company .badge {
+    color: #d080c0 !important;
+}
+body.vaporwave .exp-company img {
+    border-color: #6a2a5a !important;
+    box-shadow: 0 0 20px rgba(255, 0, 160, 0.1);
+}
+body.vaporwave .exp-position {
+    color: #00ffff !important;
+}
+body.vaporwave .exp-date {
+    color: #8a6a8a !important;
+}
+body.vaporwave .exp-table .exp-right {
+    border-left-color: #4a2a4a !important;
+}
+body.vaporwave .exp-table .exp-right img {
+    border-color: #6a2a5a !important;
+    box-shadow: 0 0 30px rgba(255, 0, 160, 0.1);
+}
+body.vaporwave .exp-divider {
+    border-bottom-color: #4a2a4a !important;
+}
+body.vaporwave .btn-wrapper {
+    background-color: rgba(42, 10, 58, 0.9) !important;
+    border-color: #6a2a5a !important;
+}
+body.vaporwave .btn-wrapper a {
+    color: #ff00a0 !important;
+}
+body.vaporwave .btn-wrapper a:hover {
+    color: #00ffff !important;
+}
